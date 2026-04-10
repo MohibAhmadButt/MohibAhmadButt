@@ -1,6 +1,6 @@
 # Hi, I'm Mohib Ahmad Butt 👋
 
-### 🤖 Aspiring AI & Machine Learning Engineer 
+### 🎓 BS Artificial Intelligence Student @ SZABIST 
 I am a 6th-semester **BS Artificial Intelligence** student at **SZABIST**. I’m passionate about building intelligent systems that solve real-world problems, with a focus on Computer Vision and Data Analysis.
 
 ---
