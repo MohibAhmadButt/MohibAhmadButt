@@ -30,3 +30,4 @@ I am a 6th-semester **BS Artificial Intelligence** student at **SZABIST**. I’m
 
 ---
 *"Turning data into intelligence, one line of code at a time."*
+![Snake animation](https://raw.githubusercontent.com/MohibAhmadButt/MohibAhmadButt/output/github-snake-dark.svg)
