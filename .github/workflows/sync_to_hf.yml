@@ -12,9 +12,14 @@ jobs:
         with:
           fetch-depth: 0
           lfs: true
+      
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
-          # REPLACE 'MohibAhmadButt' and 'Agentic-Medical-Image-Analyzer' if different
-          git push --force https://MohibAhmadButt:$HF_TOKEN@huggingface.co/spaces/MohibAhmadButt/Agentic-Medical-Image-Analyzer main
+          git config --global user.email "mohibahmadbutt@gmail.com"
+          git config --global user.name "MohibAhmadButt"
+          git remote add hf https://huggingface.co/spaces/MohibAhmadButt/Agentic-Medical-Image-Analyzer
+          git config --global credential.helper store
+          echo "https://MohibAhmadButt:$HF_TOKEN@huggingface.co" > ~/.git-credentials
+          git push --force hf main
