@@ -15,7 +15,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Sync to Hugging Face Hub
-        uses: huggingface/hub-sync@latest
+        uses: huggingface/hub-sync@v0.1.0
         with:
           github_repo_id: MohibAhmadButt/Agentic-Medical-Image-Analyzer
           huggingface_repo_id: MohibAhmadButt/Agentic-Medical-Image-Analyzer
