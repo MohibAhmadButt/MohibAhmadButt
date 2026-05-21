@@ -5,21 +5,17 @@ on:
   workflow_dispatch:
 
 jobs:
-  sync-to-hub:
+  sync:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout Code
+        uses: actions/checkout@v4 # Upgraded to use modern Node versions
+
+      - name: Sync GitHub to Hugging Face Hub
+        uses: huggingface/hub-sync@v0.1.0
         with:
-          fetch-depth: 0
-          lfs: true
-      
-      - name: Push to hub
-        env:
-          HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: |
-          git config --global user.email "mohibahmadbutt@gmail.com"
-          git config --global user.name "MohibAhmadButt"
-          git remote add hf https://huggingface.co/spaces/MohibAhmadButt/Agentic-Medical-Image-Analyzer
-          git config --global credential.helper store
-          echo "https://MohibAhmadButt:$HF_TOKEN@huggingface.co" > ~/.git-credentials
-          git push --force hf main
+          github_repo_id: ${{ github.repository }}
+          huggingface_repo_id: MohibAhmadButt/Agentic-Medical-Image-Analyzer
+          hf_token: ${{ secrets.HF_TOKEN }}
+          repo_type: space
+          space_sdk: streamlit
