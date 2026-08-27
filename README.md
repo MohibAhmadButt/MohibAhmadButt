@@ -1,7 +1,7 @@
 # Hi, I'm Mohib Ahmad Butt 👋
 
 ### 🎓 BS Artificial Intelligence Student @ SZABIST 
-I am a 6th-semester **BS Artificial Intelligence** student at **SZABIST**. I’m passionate about building intelligent systems that solve real-world problems, with a focus on Computer Vision and Data Analysis.
+I am a 7th-semester **BS Artificial Intelligence** student at **SZABIST**. I’m passionate about building intelligent systems that solve real-world problems, with a focus on Computer Vision and Data Analysis.
 
 ---
 
@@ -26,7 +26,7 @@ I am a 6th-semester **BS Artificial Intelligence** student at **SZABIST**. I’m
 ### 📬 Connect with me
 * 📍 Based in **Rawalpindi, Pakistan**
 * 💼 [LinkedIn](https://www.linkedin.com/in/mohib-ahmad-butt-a9a053253/)
-* 📧 [buttm137@gmail.com]
+* 📧 [mohib.ahmad.butt@gmail.com]
 
 ---
 *"Turning data into intelligence, one line of code at a time."*
